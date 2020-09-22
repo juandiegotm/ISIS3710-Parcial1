@@ -1,0 +1,25 @@
+#encabezado {
+    display: flex;
+    font-family: 'Satisfy';
+    justify-content: space-between;
+    height: auto;
+    overflow: hidden;
+}
+
+#right {
+    display: flex;
+}
+
+#carrito {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#carrito img{
+    height: 10%;
+
+}
+
+#carrito h4 {
+    font-size: small;
+}
