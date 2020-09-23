@@ -1,25 +1,51 @@
+html, body {
+    height: 100%;
+}
+
 #encabezado {
     display: flex;
     font-family: 'Satisfy';
     justify-content: space-between;
-    height: auto;
-    overflow: hidden;
 }
 
-#right {
-    display: flex;
-}
 
 #carrito {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 #carrito img{
-    height: 10%;
-
+    width: 10%;
 }
 
 #carrito h4 {
-    font-size: small;
+    font-size: medium;
+}
+
+#banner {
+    background-image: url("./assets/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 50vh;
+}
+
+.pageTitle {
+    text-align: center;
+}
+
+
+.hamburgers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hamburger {
+    margin: 10px;
+    width: 18rem;
+}
+
+.contact-info {
+    text-align: center;
 }
