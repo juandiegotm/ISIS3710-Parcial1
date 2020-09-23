@@ -19,23 +19,35 @@
   </head>
   <body>
     <!-- Encabezado  -->
-    <div class="container-fluid" id="encabezado">
-      <h1 id="titulo">Restaurant & Lounge</h1>
-      <div id="carrito">
-        <img src="./assets/carrito.png" alt="Logo de un carrito" />
-        <h4>2 items</h4>
+    <div class="container-fluid encabezado">
+      <h1 class="titulo">Restaurant & Lounge</h1>
+      <div class="carrito">
+        <img
+          src="./assets/carrito.png"
+          alt="Logo de un carrito"
+          onclick="renderCarrito()"
+        />
+        <h4 class="numItems"></h4>
       </div>
     </div>
     <hr />
 
     <!-- Banner -->
-    <div class="container-fluid" id="banner"></div>
+    <div class="container-fluid banner"></div>
 
     <hr />
 
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -46,11 +58,12 @@
     </nav>
 
     <hr />
-    <h2 class="pageTitle">Burgers</h2>
+    <h2 class="pageTitle"></h2>
     <hr />
 
-    <div class="container-fluid hamburgers">
-      <!-- <div class="card hamburger" style="width: 18rem;">
+    <!-- Muestra los productos -->
+    <div class="container-fluid products">
+      <!-- <div class="card product" style="width: 18rem;">
         <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -60,9 +73,40 @@
       </div> -->
     </div>
 
-    <br>
+    <!-- Muestra el carrito -->
+    <div class="container-fluid carrito-detail">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Qty.</th>
+            <th scope="col">Description</th>
+            <th scope="col">Unit price</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="carrito-control">
+        <h5 class="total"></h5>
+        <div class="buttons">
+          <button type="button" class="btn btn-danger" onclick="cancelOrder()">
+            Cancel
+          </button>
+          <button
+            type="button"
+            class="btn btn-success"
+            onclick="confirmOrder()"
+          >
+            Confirm order
+          </button>
+        </div>
+      </div>
+    </div>
 
-    <p class="contact-info">Contact us: +573102105253 - info@restaurant.com- @restaurant</p>
-
+    <br />
+    <p class="contact-info">
+      Contact us: +573102105253 - info@restaurant.com- @restaurant
+    </p>
   </body>
 </html>

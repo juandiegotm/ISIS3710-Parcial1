@@ -1,51 +1,64 @@
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
-#encabezado {
-    display: flex;
-    font-family: 'Satisfy';
-    justify-content: space-between;
+.encabezado {
+  display: flex;
+  font-family: "Satisfy";
+  justify-content: space-between;
+  margin: 20px;
 }
 
-
-#carrito {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.titulo {
+  margin: 10px;
 }
 
-#carrito img{
-    width: 10%;
+.carrito {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-#carrito h4 {
-    font-size: medium;
+.carrito img {
+  width: 9%;
+  margin: 10px;
 }
 
-#banner {
-    background-image: url("./assets/banner.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 50vh;
+.carrito h4 {
+  font-size: medium;
+}
+
+.banner {
+  background-image: url("./assets/banner.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 50vh;
 }
 
 .pageTitle {
-    text-align: center;
+  text-align: center;
 }
 
-
-.hamburgers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.products {
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.hamburger {
-    margin: 10px;
-    width: 18rem;
+.product {
+  margin: 10px;
+  width: 18rem;
 }
 
 .contact-info {
-    text-align: center;
+  text-align: center;
+}
+
+.carrito-detail {
+  flex-direction: column;
+}
+
+.carrito-control {
+  display: flex;
+  justify-content: space-between;
 }
